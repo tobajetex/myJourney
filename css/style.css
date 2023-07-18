@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700&display=swap');
+
+/* ============ Global Styles ============ */
+
+*,*:before,*:after{
+    box-sizing: border-box
+}
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    color:#151515; 
+}
+a{
+    text-decoration: none
+}
+li{
+    list-style-type: none;
+}
+header , footer{
+    padding:1vw 3vw
+}
+
+
+.grid {
+ padding:3vw
+}
+img{
+    width: 100%
+}
+ .sectional-img{
+    width:100%;
+   height:232px;
+    display:block;  
+}
+.center{
+    text-align: center
+}
+
+
+
+
+/* ============End of Global Styles ============ */
+
+/* ============ Typography Styles ============ */
+
+h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ============ End of Typography Styles ============ */
+
+/* ============ Header Styles ============ */
+
+
+.header-img{
+ width:30px;
+ margin-right:0.4em   
+}
+header p{
+    font-weight:700;
+    font-size: 0.875rem
+    
+}
+
+header,header ul,header a{
+    display:flex;
+    align-items: center;
+    color:unset;
+}
+header ul{
+    gap:2em
+}
+header nav{
+    margin-left:auto;
+    font-size: 0.75rem;
+    font-weight:600;
+    color:#090909;
+
+
+}
+
+/* ============End of Header Styles ============ */
+
+
+/* ============ Main Section Styles ============ */
+
+.more-card-link{
+    display:block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline 2px #003;
+    margin:1em  
+}
+ main>section:first-child{
+    padding:3vw ;     
+}
+ main>section:first-child p{
+    line-height: 1.5 ;     
+}
+main .grid section p:not(:first-of-type)  {
+  color: #505050; 
+}
+main section:not(:first-of-type) p:first-of-type {
+  color: #000; 
+ 
+}
+main section h2{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:#141414;
+    margin:0em 0
+}
+
+.hidden{
+    display:none;
+}
+
+#unique{
+  display:flex;
+  position:relative;
+  background:url("images/article-image.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color:white;
+  height:100vh;
+}
+.test{
+    margin:auto auto 0 0;
+    width: 90%;
+    max-width:650px;
+    
+}
+/* ============ Pages two Main Section Styles ============ */
+#page-two-hero img{
+    margin:2em 0;
+    border-radius:4px
+}
+#page-two-hero h3{
+    font-size: 1rem;
+}
+
+/* ============ End of Pages two Main Section Styles ============ */
+
+/* ============ Pages three Main Section Styles ============ */
+
+#profile-img{
+    width: 200px;
+    border-radius:50%;
+}
+/* ============ Pages three Main Section Styles ============ */
+
+
+/* ============ End of Main Section Styles ============ */
+
+/* ============ Footer Section Styles ============ */
+
+footer{
+    font-size:12px;
+    font-weight: 700;
+    text-align: center;
+    background:#202020;
+    color:#ECECEC;
+
+
+}
+/* ============ End of Footer Section Styles ============ */
+
+@media(max-width:540px){
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+  
+
+}
+
+@media(min-width:541px) {
+     .hidden{
+    display:block;
+}
+header p{
+    font-size:1.25rem 
+}
+
+header nav{
+    font-size:1rem;    
+}
+h1{
+    font-size: 2.5rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+.grid{
+    gap:3vw;
+}
+#about{
+    display: grid;
+    grid-template-columns: auto 60% 1fr;
+    gap:3vw
+}
+
+#recent-post{
+    font-size: 1.5rem
+}
+}
+
+@media(min-width:541px) and (max-width:991px){
+ 
+ .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+ }
+
+
+}
+@media(min-width:992px){
+    .grid{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+       
+    }
+    .sectional-img{
+        height:20vw
+    }
+
+}
